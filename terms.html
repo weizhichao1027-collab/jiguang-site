@@ -21,7 +21,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Schibsted+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    html:not([lang="en"]) [data-lang="en"] { display: none !important; }
+    html[lang="en"] [data-lang="zh"] { display: none !important; }
+  </style>
+  <link rel="stylesheet" href="styles.css?v=20260915"/>
 </head>
 <body>
 <a class="skip" href="#main"><span data-lang="zh">跳到正文</span><span data-lang="en">Skip to content</span></a>
@@ -191,6 +195,6 @@
     </div>
   </div>
 </footer>
-<script src="site.js" defer></script>
+<script src="site.js?v=20260915" defer></script>
 </body>
 </html>

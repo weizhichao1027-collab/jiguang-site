@@ -628,11 +628,11 @@ li {
   color: var(--muted);
 }
 
-html[lang="en"] [data-lang="zh"] {
+html:not([lang="en"]) [data-lang="en"] {
   display: none !important;
 }
 
-html[lang="zh-Hans"] [data-lang="en"] {
+html[lang="en"] [data-lang="zh"] {
   display: none !important;
 }
 
