@@ -1,40 +1,278 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-Hans"
+  data-title-zh="光灯：打开就是补光灯"
+  data-title-en="Jiguang Fill Light: open and you are lit"
+  data-desc-zh="光灯把 iPhone 屏幕变成全屏补光灯。色温与亮度随手调，主题先预览再使用。基础免费，Pro 一次买断。不收集个人数据。"
+  data-desc-en="Jiguang Fill Light turns your iPhone screen into a fullscreen lamp. Dial color temperature and brightness, preview a scene, then apply it. Core lighting is free; Pro is a one-time unlock. We do not collect personal data.">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>光灯 — 打开就是补光灯</title>
-<link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>光灯：打开就是补光灯</title>
+  <meta name="description" content="光灯把 iPhone 屏幕变成全屏补光灯。色温与亮度随手调，主题先预览再使用。基础免费，Pro 一次买断。不收集个人数据。"/>
+  <meta name="theme-color" content="#eef1f4"/>
+  <meta name="apple-itunes-app" content="app-id=6811735744"/>
+  <link rel="canonical" href="https://weizhichao1027-collab.github.io/jiguang-site/"/>
+  <link rel="alternate" hreflang="zh-Hans" href="https://weizhichao1027-collab.github.io/jiguang-site/"/>
+  <link rel="alternate" hreflang="en" href="https://weizhichao1027-collab.github.io/jiguang-site/?lang=en"/>
+  <link rel="alternate" hreflang="x-default" href="https://weizhichao1027-collab.github.io/jiguang-site/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="光灯：打开就是补光灯"/>
+  <meta property="og:description" content="自拍、直播、短视频用的全屏补光工具。不需要相机，也不读取相册。"/>
+  <meta property="og:url" content="https://weizhichao1027-collab.github.io/jiguang-site/"/>
+  <meta property="og:image" content="https://weizhichao1027-collab.github.io/jiguang-site/assets/02-%E6%9F%94%E7%99%BD%E6%97%A5%E5%85%89.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Schibsted+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "光灯",
+    "alternateName": "Jiguang Fill Light",
+    "operatingSystem": "iOS 17",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+    "downloadUrl": "https://apps.apple.com/app/id6811735744",
+    "author": { "@type": "Person", "name": "zhichao wei" }
+  }
+  </script>
 </head>
 <body>
-<header class="hero">
-  <p class="eyebrow">Fill Light</p>
-  <h1>光灯</h1>
-  <p class="tagline">打开就是补光灯</p>
-  <a class="btn" href="https://apps.apple.com/app/id6811735744">在 App Store 下载</a>
+<a class="skip" href="#main"><span data-lang="zh">跳到正文</span><span data-lang="en">Skip to content</span></a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-current="page">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span translate="no">光灯</span>
+    </a>
+    <nav class="nav" data-nav data-open="false" aria-label="Primary">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+        <span data-lang="zh">菜单</span><span data-lang="en">Menu</span>
+      </button>
+      <div class="nav-links" id="site-nav">
+        <a href="#how"><span data-lang="zh">怎么用</span><span data-lang="en">How it works</span></a>
+        <a href="#themes"><span data-lang="zh">主题</span><span data-lang="en">Themes</span></a>
+        <a href="support.html"><span data-lang="zh">技术支持</span><span data-lang="en">Support</span></a>
+        <a href="privacy.html"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy</span></a>
+        <a href="terms.html"><span data-lang="zh">用户协议</span><span data-lang="en">Terms</span></a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-switch="zh-Hans" aria-pressed="true">中</button>
+        <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn header-cta" href="https://apps.apple.com/app/id6811735744">App Store</a>
+    </nav>
+  </div>
 </header>
 
-<section class="features">
-  <div class="card"><h3>打开即补光</h3><p>启动就是全屏补光，不用学</p></div>
-  <div class="card"><h3>色温 · 亮度</h3><p>双滑条，冷暖明暗随手调</p></div>
-  <div class="card"><h3>场景主题</h3><p>夜拍暖光、柔白日光等，先预览再使用</p></div>
-  <div class="card"><h3>一次买断</h3><p>Pro 一次解锁全部主题，无订阅；价格以 App Store 为准</p></div>
-</section>
+<main id="main">
+  <section class="wrap hero">
+    <div class="hero-copy">
+      <h1 translate="no">光灯</h1>
+      <p data-lang="zh">打开就是补光灯。自拍、直播、短视频缺光时，把屏幕对着自己或镜头即可。</p>
+      <p data-lang="en">Open and you are lit. For selfies, livestreams, and short videos, point the screen at your face or the lens.</p>
+      <div class="hero-actions">
+        <a class="btn btn-accent" href="https://apps.apple.com/app/id6811735744">
+          <span data-lang="zh">在 App Store 下载</span>
+          <span data-lang="en">Download on the App Store</span>
+        </a>
+        <a class="btn btn-text" href="#how">
+          <span data-lang="zh">先看怎么用</span>
+          <span data-lang="en">See how it works</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-slab">
+      <div class="phone">
+        <img src="assets/02-柔白日光.png" width="1290" height="2796" alt="光灯主界面，柔白日光全屏补光" fetchpriority="high"/>
+      </div>
+    </div>
+  </section>
 
-<section class="preview">
-  <h2>看看长什么样</h2>
-  <div class="shots">
-    <img src="assets/01-夜拍暖光.png" alt="夜拍暖光"/>
-    <img src="assets/02-柔白日光.png" alt="柔白日光"/>
-    <img src="assets/03-免费主题面板.png" alt="免费主题面板"/>
-    <img src="assets/04-预览态.png" alt="预览态"/>
+  <section class="wrap section" id="how">
+    <div class="section-head">
+      <h2 data-lang="zh">打开就能用，不用学参数</h2>
+      <h2 data-lang="en">Ready on launch, no lighting school</h2>
+      <p data-lang="zh">光灯不是相机，也不会美颜或读取相册。它只用屏幕铺一层稳定的光。</p>
+      <p data-lang="en">This is not a camera. It does not beautify or read your photos. It uses the screen as a steady lamp.</p>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <strong data-lang="zh">打开即补光</strong>
+        <strong data-lang="en">Fullscreen on launch</strong>
+        <p data-lang="zh">启动后整块屏幕就是补光灯。把手机对着自己或镜头，不必外接灯具。</p>
+        <p data-lang="en">The whole screen becomes the fill light. Point the phone at yourself or the lens. No extra gear.</p>
+      </article>
+      <article class="step">
+        <strong data-lang="zh">色温与亮度</strong>
+        <strong data-lang="en">Temperature and brightness</strong>
+        <p data-lang="zh">底部两条滑条分别调冷暖和明暗。使用中请保持 App 在前台。</p>
+        <p data-lang="en">Two sliders at the bottom set warmth and intensity. Keep the app in the foreground while you shoot.</p>
+      </article>
+      <article class="step">
+        <strong data-lang="zh">先预览，再使用</strong>
+        <strong data-lang="en">Preview, then apply</strong>
+        <p data-lang="zh">点右上角打开主题。点选即可预览；只有点「使用」才会保存。点错也能回到原来的光。</p>
+        <p data-lang="en">Open themes from the top-right. Tap to preview. Only Use saves the look. Dismiss the panel to keep the previous light.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section" id="themes">
+    <div class="section-head">
+      <h2 data-lang="zh">九种场景光</h2>
+      <h2 data-lang="en">Nine scene themes</h2>
+      <p data-lang="zh">免费两款日常光；其余七款由 Pro 一次买断解锁，不是订阅。价格以 App Store 购买框为准。</p>
+      <p data-lang="en">Two everyday themes are free. The other seven unlock with Pro, a one-time purchase, not a subscription. The App Store sheet shows the price.</p>
+    </div>
+    <div class="theme-rail">
+      <article class="theme-chip">
+        <div class="swatch" style="background:#F5F5F0"></div>
+        <h3 data-lang="zh">柔白日光</h3>
+        <h3 data-lang="en">Soft Daylight</h3>
+        <p data-lang="zh">免费 · 冷启动默认</p>
+        <p data-lang="en">Free · default on launch</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFE4C4"></div>
+        <h3 data-lang="zh">夜拍暖光</h3>
+        <h3 data-lang="en">Night Warm Light</h3>
+        <p data-lang="zh">免费</p>
+        <p data-lang="en">Free</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#E8F1FF"></div>
+        <h3 data-lang="zh">白天冷光</h3>
+        <h3 data-lang="en">Day Cool Light</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFE4EC"></div>
+        <h3 data-lang="zh">柔粉氛围</h3>
+        <h3 data-lang="en">Soft Pink Mood</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFF4D6"></div>
+        <h3 data-lang="zh">舞台追光</h3>
+        <h3 data-lang="en">Stage Spotlight</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFD1A3"></div>
+        <h3 data-lang="zh">电影暖调</h3>
+        <h3 data-lang="en">Cinematic Warm</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#F2F6FF"></div>
+        <h3 data-lang="zh">冷白柔光</h3>
+        <h3 data-lang="en">Cool White Light</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFE8A8"></div>
+        <h3 data-lang="zh">阳光暖黄</h3>
+        <h3 data-lang="en">Sunny Warm</h3>
+        <p>Pro</p>
+      </article>
+      <article class="theme-chip">
+        <div class="swatch" style="background:#FFF8E7"></div>
+        <h3 data-lang="zh">柔光米白</h3>
+        <h3 data-lang="en">Soft Ivory</h3>
+        <p>Pro</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap section" id="preview">
+    <div class="section-head">
+      <h2 data-lang="zh">看看长什么样</h2>
+      <h2 data-lang="en">What it looks like</h2>
+    </div>
+    <div class="shots">
+      <figure class="shot">
+        <img src="assets/01-夜拍暖光.png" width="1290" height="2796" alt="夜拍暖光全屏补光" loading="lazy"/>
+        <figcaption>
+          <span data-lang="zh">夜拍暖光</span>
+          <span data-lang="en">Night Warm Light</span>
+        </figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/03-免费主题面板.png" width="1290" height="2796" alt="免费主题面板" loading="lazy"/>
+        <figcaption>
+          <span data-lang="zh">免费主题，打开即用</span>
+          <span data-lang="en">Free themes, ready to apply</span>
+        </figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/04-预览态.png" width="1290" height="2796" alt="主题预览态" loading="lazy"/>
+        <figcaption>
+          <span data-lang="zh">先预览，再决定</span>
+          <span data-lang="en">Preview first, then decide</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="pro-band">
+      <div>
+        <h2 data-lang="zh">Pro 一次买断，不是订阅</h2>
+        <h2 data-lang="en">Pro is a one-time unlock, not a subscription</h2>
+        <p data-lang="zh">基础补光和柔白日光、夜拍暖光免费。Pro 解锁其余场景主题；用购买时的同一个 Apple ID 即可恢复购买。</p>
+        <p data-lang="en">Core lighting plus Soft Daylight and Night Warm Light stay free. Pro unlocks the remaining scenes. Restore with the same Apple ID you used to buy.</p>
+        <ul>
+          <li data-lang="zh">商品：全部场景主题（非消耗型）</li>
+          <li data-lang="en">Product: all scene themes (non-consumable)</li>
+          <li data-lang="zh">付款由 Apple 处理，价格以购买框为准</li>
+          <li data-lang="en">Apple processes payment. The sheet shows the price.</li>
+          <li data-lang="zh">无需注册账号，也无需相机或相册权限</li>
+          <li data-lang="en">No account. No camera or photo library permission.</li>
+        </ul>
+      </div>
+      <div>
+        <a class="btn btn-accent" href="https://apps.apple.com/app/id6811735744">
+          <span data-lang="zh">前往 App Store</span>
+          <span data-lang="en">Open the App Store</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2 translate="no">光灯</h2>
+      <p data-lang="zh">iOS 全屏补光工具。开发者：zhichao wei。</p>
+      <p data-lang="en">iOS fullscreen fill light. Developer: zhichao wei.</p>
+      <a href="mailto:weizhichao6688@gmail.com">weizhichao6688@gmail.com</a>
+    </div>
+    <div>
+      <h2 data-lang="zh">产品</h2>
+      <h2 data-lang="en">Product</h2>
+      <a href="index.html#how"><span data-lang="zh">怎么用</span><span data-lang="en">How it works</span></a>
+      <a href="index.html#themes"><span data-lang="zh">场景主题</span><span data-lang="en">Themes</span></a>
+      <a href="https://apps.apple.com/app/id6811735744">App Store</a>
+    </div>
+    <div>
+      <h2 data-lang="zh">支持</h2>
+      <h2 data-lang="en">Support</h2>
+      <a href="support.html"><span data-lang="zh">帮助中心</span><span data-lang="en">Help center</span></a>
+      <a href="support.html#contact"><span data-lang="zh">联系我们</span><span data-lang="en">Contact</span></a>
+    </div>
+    <div>
+      <h2 data-lang="zh">法务</h2>
+      <h2 data-lang="en">Legal</h2>
+      <a href="privacy.html"><span data-lang="zh">隐私政策</span><span data-lang="en">Privacy Policy</span></a>
+      <a href="terms.html"><span data-lang="zh">用户协议</span><span data-lang="en">Terms of Use</span></a>
+    </div>
   </div>
-</section>
-
-<footer>
-  <a href="support.html">技术支持</a>
-  <a href="privacy.html">隐私政策</a>
-  <a href="mailto:weizhichao6688@gmail.com">weizhichao6688@gmail.com</a>
 </footer>
+<script src="site.js" defer></script>
 </body>
 </html>
