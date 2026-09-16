@@ -116,8 +116,8 @@
     <li data-lang="zh">是否已在本机记下 Pro 解锁状态（最终以 Apple 的购买凭证为准）</li>
     <li data-lang="en">A local flag for Pro unlock (Apple’s purchase record is the source of truth)</li>
   </ul>
-  <p data-lang="zh">上述内容使用系统 UserDefaults 保存在本机，对应隐私清单中的 UserDefaults API（原因代码 CA92.1）。卸载 App 后，这些本地记录会被删除。</p>
-  <p data-lang="en">These values are stored in on-device UserDefaults, declared in the privacy manifest as the UserDefaults API (reason CA92.1). Uninstalling the app removes them.</p>
+  <p data-lang="zh">工作台偏好（当前光位、亮度、色温、分光）使用系统 UserDefaults 保存在本机，对应隐私清单中的 UserDefaults API（原因代码 CA92.1）。Pro 解锁以 Apple 的购买凭证为准；本机只在 Keychain 里保存一个不透明标记，不把 Pro 状态写进 UserDefaults。卸载 App 后，这些本地记录会被删除。</p>
+  <p data-lang="en">Desk preferences (current recipe, brightness, color temperature, split) are stored in on-device UserDefaults, declared in the privacy manifest as the UserDefaults API (reason CA92.1). Pro unlock is determined by Apple’s purchase record. This device only keeps an opaque Keychain marker; it does not store Pro status in UserDefaults. Uninstalling the app removes these local records.</p>
 
   <h2 id="use"><span data-lang="zh">3. 使用方式</span><span data-lang="en">3. How information is used</span></h2>
   <p data-lang="zh">因为我们不收集个人数据，也就不存在将个人数据用于运营、营销或向第三方提供的情形。本机保存的工作台偏好只用于：下次打开时恢复你上次的光；以及在光位面板中显示当前正在使用的配方。</p>
@@ -136,8 +136,8 @@
   <h2 id="keep"><span data-lang="zh">5. 保存与保护</span><span data-lang="en">5. Retention and protection</span></h2>
   <p data-lang="zh">我们不在云端保存你的个人数据，因此也没有云端保存期限。本机偏好保存在设备上，直到你卸载 App 或自行清除 App 数据。</p>
   <p data-lang="en">We do not store your personal data in the cloud, so there is no cloud retention period. On-device preferences remain until you uninstall the app or clear its data.</p>
-  <p data-lang="zh">若你开启了 iCloud 或电脑备份，iOS 系统备份可能包含 UserDefaults 中的工作台偏好。备份由你的 Apple ID 与系统策略管理，我们无法访问这些备份。</p>
-  <p data-lang="en">If you use iCloud or computer backups, an iOS backup may include desk preferences in UserDefaults. Those backups are controlled by your Apple ID and system policy. We cannot access them.</p>
+  <p data-lang="zh">若你开启了 iCloud 或电脑备份，iOS 系统备份可能包含 UserDefaults 中的工作台偏好。Pro 的 Keychain 标记使用「首次解锁后仅本机可读」，不会随 iCloud 备份到其他设备。备份由你的 Apple ID 与系统策略管理，我们无法访问这些备份。</p>
+  <p data-lang="en">If you use iCloud or computer backups, an iOS backup may include desk preferences in UserDefaults. The Pro Keychain marker is set to be readable on this device after first unlock and is not included in iCloud backups. Those backups are controlled by your Apple ID and system policy. We cannot access them.</p>
   <p data-lang="zh">我们采取的保护措施包括：不采集个人数据、不接入统计或广告 SDK、不自建账号系统、购买走 Apple 官方通道。没有任何系统能保证绝对安全；若你发现与本 App 有关的安全问题，请发邮件告知。</p>
   <p data-lang="en">Our protections are structural: we do not collect personal data, we do not ship analytics or ad SDKs, we have no account system, and purchases go through Apple. No system is perfectly secure. Email us if you find a security issue related to the app.</p>
 
